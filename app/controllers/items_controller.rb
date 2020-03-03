@@ -39,11 +39,12 @@ class ItemsController < ApplicationController
   def update
     # binding.pry
     @parents = Category.where(ancestry: nil)
-   if @item.update(item_update_params)
+   if  @item.image.blank?
+      redirect_to item_path
+   else 
+      @item.update(item_update_params)
       redirect_to root_path
-    else 
-      render "edit"
-    end
+   end
   end
 
   def destroy
