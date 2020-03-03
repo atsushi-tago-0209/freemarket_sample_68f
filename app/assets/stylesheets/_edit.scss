@@ -1,439 +1,439 @@
-html{
-  min-height: 100%;
-    background: #f5f5f5;
-    font-family: 'Source Sans Pro', Helvetica , Arial, '游ゴシック体', 'YuGothic', 'メイリオ', 'Meiryo', sans-serif;
-    font-size: 14px;
-    color: #333;
-    line-height: 1;
-}
-.exhibit{
-  &__header{
-    margin: 40px 0 0;
-    height: 128px;
-    text-align: center;
-    &__logo{
-      &__image{
-        width: 185px;
-        height: 49px;
-        line-height: 49px;
-      }
-    }
-  }
-  &__main{
-    &__itemProfile{
-      background-color: #fff;
-      width: 700px;
-      margin: 0 auto;
-      &__inputForm{
-        &__top{
-          padding: 32px 16px;
-          font-size: 22px;
-          font-weight: bold;
-          text-align: center;
-        }
-        &__sellImage{
-          border-top: 1px solid #eee;
-          &__upload{
-            width: 620px;
-            padding: 40px;
-            &__head{
-              font-weight: bold;
-              display: flex;
-            }
-            &__attention{
-              margin: 8px 0 0;
-              line-height: 1.5;
-            }
-            &__image10{
-              display: block;
-              margin: 16px auto 0;
-              display: flex;
-              flex-wrap: wrap;
-              .prev-content{
-                float: left;
-                display: flex;
-                .preview-box{
-                  height: 162px;
-                  width: 112px;
-                  margin: 0 15px 10px 0;
-                  .upper-box {
-                    height: 112px;
-                    width: 100%;
-                    img{
-                      width: 112px;
-                      height: 112px;
-                    }
-                  }
-                  .lower-box {
-                    display: flex;
-                    text-align: center;
-                  }
-                    .update-box {
-                      color: #00b0ff;
-                      width: 50%;
-                      height: 50px;
-                      line-height: 50px;
-                      border: 1px solid #eee;
-                      background: #f5f5f5;
-                      cursor: pointer;
-                    }
-                    .delete-box {
-                      color: #00b0ff;
-                      width: 50%;
-                      height: 50px;
-                      line-height: 50px;
-                      border: 1px solid #eee;
-                      background: #f5f5f5;
-                      cursor: pointer;
-                    }
+// html{
+//   min-height: 100%;
+//     background: #f5f5f5;
+//     font-family: 'Source Sans Pro', Helvetica , Arial, '游ゴシック体', 'YuGothic', 'メイリオ', 'Meiryo', sans-serif;
+//     font-size: 14px;
+//     color: #333;
+//     line-height: 1;
+// }
+// .exhibit{
+//   &__header{
+//     margin: 40px 0 0;
+//     height: 128px;
+//     text-align: center;
+//     &__logo{
+//       &__image{
+//         width: 185px;
+//         height: 49px;
+//         line-height: 49px;
+//       }
+//     }
+//   }
+//   &__main{
+//     &__itemProfile{
+//       background-color: #fff;
+//       width: 700px;
+//       margin: 0 auto;
+//       &__inputForm{
+//         &__top{
+//           padding: 32px 16px;
+//           font-size: 22px;
+//           font-weight: bold;
+//           text-align: center;
+//         }
+//         &__sellImage{
+//           border-top: 1px solid #eee;
+//           &__upload{
+//             width: 620px;
+//             padding: 40px;
+//             &__head{
+//               font-weight: bold;
+//               display: flex;
+//             }
+//             &__attention{
+//               margin: 8px 0 0;
+//               line-height: 1.5;
+//             }
+//             &__image10{
+//               display: block;
+//               margin: 16px auto 0;
+//               display: flex;
+//               flex-wrap: wrap;
+//               .prev-content{
+//                 float: left;
+//                 display: flex;
+//                 .preview-box{
+//                   height: 162px;
+//                   width: 112px;
+//                   margin: 0 15px 10px 0;
+//                   .upper-box {
+//                     height: 112px;
+//                     width: 100%;
+//                     img{
+//                       width: 112px;
+//                       height: 112px;
+//                     }
+//                   }
+//                   .lower-box {
+//                     display: flex;
+//                     text-align: center;
+//                   }
+//                     .update-box {
+//                       color: #00b0ff;
+//                       width: 50%;
+//                       height: 50px;
+//                       line-height: 50px;
+//                       border: 1px solid #eee;
+//                       background: #f5f5f5;
+//                       cursor: pointer;
+//                     }
+//                     .delete-box {
+//                       color: #00b0ff;
+//                       width: 50%;
+//                       height: 50px;
+//                       line-height: 50px;
+//                       border: 1px solid #eee;
+//                       background: #f5f5f5;
+//                       cursor: pointer;
+//                     }
                   
-                }
-              }
-              //投稿クリックエリアのCSS
-              .label-content{
-                margin-bottom: 10px;
-                width: 620px;
-                float: right;
-                .label-box {
-                  display: block;
-                  border: 1px dashed #ccc;
-                  position: relative;
-                  background: #f5f5f5;
-                  width: 100%;
-                  height: 162px;
-                  cursor: pointer;
-                  &__text-visible {
-                    position: absolute;
-                    top: 50%;
-                    left: 16px;
-                    right: 16px;
-                    text-align: center;
-                    font-size: 14px;
-                    line-height: 1.5;
-                    font-weight: bold;
-                    -webkit-transform: translate(0, -50%);
-                    transform: translate(0, -50%);
-                    pointer-events: none;
-                    white-space: pre-wrap;
-                    word-wrap: break-word;
-                  }
-                }
+//                 }
+//               }
+//               //投稿クリックエリアのCSS
+//               .label-content{
+//                 margin-bottom: 10px;
+//                 width: 620px;
+//                 float: right;
+//                 .label-box {
+//                   display: block;
+//                   border: 1px dashed #ccc;
+//                   position: relative;
+//                   background: #f5f5f5;
+//                   width: 100%;
+//                   height: 162px;
+//                   cursor: pointer;
+//                   &__text-visible {
+//                     position: absolute;
+//                     top: 50%;
+//                     left: 16px;
+//                     right: 16px;
+//                     text-align: center;
+//                     font-size: 14px;
+//                     line-height: 1.5;
+//                     font-weight: bold;
+//                     -webkit-transform: translate(0, -50%);
+//                     transform: translate(0, -50%);
+//                     pointer-events: none;
+//                     white-space: pre-wrap;
+//                     word-wrap: break-word;
+//                   }
+//                 }
               
-                .hidden-content {
-                  .hidden-field {
-                    display: none;
-                  }
-                  .hidden-checkbox {
-                    display: none;
-                  }
-                }
-                .js-file_group{
-                  display:none;
-                }
-              }
-            }
-          }
-        }
-        &__sellGoods{
-          padding: 40px;
-          border-top: 1px solid #eee;
-          &__name{
-            font-weight: bold;
-            display: flex;
-          }
-          &__input{
-            width: 100%;
-            margin: 8px 0 0;
-            height: 48px;
-            padding: 10px 16px 8px;
-            border-radius: 4px;
-            border: 1px solid #ccc;
-            background: #fff;
-            line-height: 1.5;
-            font-size: 16px;
-          }
-          &__description{
-            margin: 40px 0 0;
-            font-weight: bold;
-            display: flex;
-          }
-          &__wordCount{
-            text-align: right;
-          }
-        }
-        &__sellDetails{
-          padding: 40px;
-          border-top: 1px solid #eee;
-          display: flex;
-          justify-content: space-between;
-          &__title{
-            color: #888;
-            font-weight: bold;
-            font-size: 14px;
-          }
-          &__formBox{
-            width: 400px;
-            margin: 0;
-            &__category{
-              &__select{
-                font-weight: bold;
-                display: flex;
-              }
-              select{
-                width: 100%;
-                margin: 8px 0 0;
-                height: 48px;
-                padding: 10px 16px 8px;
-                border-radius: 4px;
-                border: 1px solid #ccc;
-                background: #fff;
-                line-height: 1.5;
-                font-size: 16px;
-              }
-            }
-            &__brand{
-              margin: 40px 0 0;
-              &__write{
-                font-weight: bold;
-                display: flex;
-              }
-            }
-            &__state{
-              margin: 40px 0 0;
-              &__select{
-                font-weight: bold;
-                display: flex;
-              }
-              select{
-                width: 100%;
-                margin: 8px 0 0;
-                height: 48px;
-                padding: 10px 16px 8px;
-                border-radius: 4px;
-                border: 1px solid #ccc;
-                background: #fff;
-                line-height: 1.5;
-                font-size: 16px;
-              }
-            }
-          }
-        }
-        &__delivery{
-          padding: 40px;
-          border-top: 1px solid #eee;
-          display: flex;
-          justify-content: space-between;
-          &__leftBox{
-            &__title{
-              color: #888;
-              font-weight: bold;
-              font-size: 14px;
-            }
-          }
-          &__formBox{
-            width: 400px;
-            margin: 0;
-            &__burden{
-              &__select{
-                font-weight: bold;
-                display: flex;
-              }
-            }
-            &__area{
-              &__select{
-                margin: 40px 0 0;
-                font-weight: bold;
-                display: flex;
-              }
-            }
-            &__days{
-              &__select{
-                margin: 40px 0 0;
-                font-weight: bold;
-                display: flex;
-              }
-            }
-          }
-        }
-        &__sellPrice{
-          padding: 40px;
-          border-top: 1px solid #eee;
-          display: flex;
-          justify-content: space-between;
-          &__leftBox{
-            &__title{
-              color: #888;
-              font-weight: bold;
-              font-size: 14px;
-            }
-          }
-          &__calculation{
-            width: 400px;
-            margin: 0;
-            &__priceForm{
-              padding: 0 0 24px;
-              &__amountOfSales{
-                font-weight: bold;
-                display: flex;
-              }
-            }
-            &__commission{
-              padding: 24px 0;
-              border-top: 1px solid #ccc;
-              display: flex;
-              justify-content: space-between;
-              &__title{
-              }
-            }
-            &__profit{
-              padding: 24px 0;
-              border-top: 1px solid #ccc;
-              display: flex;
-              justify-content: space-between;
-              &__title{
-              }
-              &__count{
-              }
-            }
-          }
-        }
-        &__warning{
-          padding: 40px;
-          border-top: 1px solid #eee;
-          &__links{
-            &__link{
-              text-decoration: none;
-            }
-          }
-        }
-      }
-    }
-  //「必須」の表記
-    .formRequire{
-      background: #ea352d;
-      margin: 0 0 0 8px;
-      padding: 2px 4px;
-      border-radius: 2px;
-      color: #fff;
-      font-size: 12px;
-      vertical-align: top;
-    }
-  //「任意」の表記
-    .formAny{
-      background: #bfbfbf;
-      margin: 0 0 0 8px;
-      padding: 2px 4px;
-      border-radius: 2px;
-      color: #fff;
-      font-size: 12px;
-      vertical-align: top;
-    }
-    //入力部分
-    .exhibitInput{
-      width: 100%;
-      margin: 8px 0 0;
-      height: 48px;
-      padding: 10px 16px 8px;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-      background: #fff;
-      line-height: 1.5;
-      font-size: 16px;
-    }
-    .exhibitTextarea{
-      width: 100%;
-      margin: 8px 0 0;
-      height: 144px;
-      padding: 10px 16px 8px;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-      background: #fff;
-      line-height: 1.5;
-      font-size: 16px;
-    }
-    .exhibitSubmit1{
-      display: block;
-      margin: 40px auto 0;
-      width: 45%;
-      line-height: 48px;
-      font-size: 14px;
-      background: #ea352d;
-      border: 1px solid #ea352d;
-      color: #fff;
-      cursor: pointer;
-      text-align: center;  
-      text-decoration: none;
-    }
-    .exhibitCancel{
-      display: block;
-      margin: 24px auto 0;
-      width: 45%;
-      line-height: 48px;
-      font-size: 17px;
-      transition: all ease-out .3s;
-      background: #aaa;
-      border: 1px solid #aaa;
-      color: #fff;
-      cursor: pointer;
-      text-align: center;  
-      text-decoration: none;
-    }
-  }
-  &__footer{
-    text-align: center;
-    padding: 40px 0px 41px;
-    &__lists{
-      margin: -16px 0px 40px -16px;
-      &__list{
-        margin: 16px 0px 0px 16px;
-        font-size: 12px;
-        color: black;
-      }
-    }
-    &__logo{
-      width: 80px;
-      height: 65px;
-      margin: 40px auto 0;
-      &__image{
-        width: 185px;
-        height: 49px;
-      }
-    }
-    &__ending{
-      font-size: 13px;
-      text-align: center;
-    }
-  }
-}
+//                 .hidden-content {
+//                   .hidden-field {
+//                     display: none;
+//                   }
+//                   .hidden-checkbox {
+//                     display: none;
+//                   }
+//                 }
+//                 .js-file_group{
+//                   display:none;
+//                 }
+//               }
+//             }
+//           }
+//         }
+//         &__sellGoods{
+//           padding: 40px;
+//           border-top: 1px solid #eee;
+//           &__name{
+//             font-weight: bold;
+//             display: flex;
+//           }
+//           &__input{
+//             width: 100%;
+//             margin: 8px 0 0;
+//             height: 48px;
+//             padding: 10px 16px 8px;
+//             border-radius: 4px;
+//             border: 1px solid #ccc;
+//             background: #fff;
+//             line-height: 1.5;
+//             font-size: 16px;
+//           }
+//           &__description{
+//             margin: 40px 0 0;
+//             font-weight: bold;
+//             display: flex;
+//           }
+//           &__wordCount{
+//             text-align: right;
+//           }
+//         }
+//         &__sellDetails{
+//           padding: 40px;
+//           border-top: 1px solid #eee;
+//           display: flex;
+//           justify-content: space-between;
+//           &__title{
+//             color: #888;
+//             font-weight: bold;
+//             font-size: 14px;
+//           }
+//           &__formBox{
+//             width: 400px;
+//             margin: 0;
+//             &__category{
+//               &__select{
+//                 font-weight: bold;
+//                 display: flex;
+//               }
+//               select{
+//                 width: 100%;
+//                 margin: 8px 0 0;
+//                 height: 48px;
+//                 padding: 10px 16px 8px;
+//                 border-radius: 4px;
+//                 border: 1px solid #ccc;
+//                 background: #fff;
+//                 line-height: 1.5;
+//                 font-size: 16px;
+//               }
+//             }
+//             &__brand{
+//               margin: 40px 0 0;
+//               &__write{
+//                 font-weight: bold;
+//                 display: flex;
+//               }
+//             }
+//             &__state{
+//               margin: 40px 0 0;
+//               &__select{
+//                 font-weight: bold;
+//                 display: flex;
+//               }
+//               select{
+//                 width: 100%;
+//                 margin: 8px 0 0;
+//                 height: 48px;
+//                 padding: 10px 16px 8px;
+//                 border-radius: 4px;
+//                 border: 1px solid #ccc;
+//                 background: #fff;
+//                 line-height: 1.5;
+//                 font-size: 16px;
+//               }
+//             }
+//           }
+//         }
+//         &__delivery{
+//           padding: 40px;
+//           border-top: 1px solid #eee;
+//           display: flex;
+//           justify-content: space-between;
+//           &__leftBox{
+//             &__title{
+//               color: #888;
+//               font-weight: bold;
+//               font-size: 14px;
+//             }
+//           }
+//           &__formBox{
+//             width: 400px;
+//             margin: 0;
+//             &__burden{
+//               &__select{
+//                 font-weight: bold;
+//                 display: flex;
+//               }
+//             }
+//             &__area{
+//               &__select{
+//                 margin: 40px 0 0;
+//                 font-weight: bold;
+//                 display: flex;
+//               }
+//             }
+//             &__days{
+//               &__select{
+//                 margin: 40px 0 0;
+//                 font-weight: bold;
+//                 display: flex;
+//               }
+//             }
+//           }
+//         }
+//         &__sellPrice{
+//           padding: 40px;
+//           border-top: 1px solid #eee;
+//           display: flex;
+//           justify-content: space-between;
+//           &__leftBox{
+//             &__title{
+//               color: #888;
+//               font-weight: bold;
+//               font-size: 14px;
+//             }
+//           }
+//           &__calculation{
+//             width: 400px;
+//             margin: 0;
+//             &__priceForm{
+//               padding: 0 0 24px;
+//               &__amountOfSales{
+//                 font-weight: bold;
+//                 display: flex;
+//               }
+//             }
+//             &__commission{
+//               padding: 24px 0;
+//               border-top: 1px solid #ccc;
+//               display: flex;
+//               justify-content: space-between;
+//               &__title{
+//               }
+//             }
+//             &__profit{
+//               padding: 24px 0;
+//               border-top: 1px solid #ccc;
+//               display: flex;
+//               justify-content: space-between;
+//               &__title{
+//               }
+//               &__count{
+//               }
+//             }
+//           }
+//         }
+//         &__warning{
+//           padding: 40px;
+//           border-top: 1px solid #eee;
+//           &__links{
+//             &__link{
+//               text-decoration: none;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   //「必須」の表記
+//     .formRequire{
+//       background: #ea352d;
+//       margin: 0 0 0 8px;
+//       padding: 2px 4px;
+//       border-radius: 2px;
+//       color: #fff;
+//       font-size: 12px;
+//       vertical-align: top;
+//     }
+//   //「任意」の表記
+//     .formAny{
+//       background: #bfbfbf;
+//       margin: 0 0 0 8px;
+//       padding: 2px 4px;
+//       border-radius: 2px;
+//       color: #fff;
+//       font-size: 12px;
+//       vertical-align: top;
+//     }
+//     //入力部分
+//     .exhibitInput{
+//       width: 100%;
+//       margin: 8px 0 0;
+//       height: 48px;
+//       padding: 10px 16px 8px;
+//       border-radius: 4px;
+//       border: 1px solid #ccc;
+//       background: #fff;
+//       line-height: 1.5;
+//       font-size: 16px;
+//     }
+//     .exhibitTextarea{
+//       width: 100%;
+//       margin: 8px 0 0;
+//       height: 144px;
+//       padding: 10px 16px 8px;
+//       border-radius: 4px;
+//       border: 1px solid #ccc;
+//       background: #fff;
+//       line-height: 1.5;
+//       font-size: 16px;
+//     }
+//     .exhibitSubmit1{
+//       display: block;
+//       margin: 40px auto 0;
+//       width: 45%;
+//       line-height: 48px;
+//       font-size: 14px;
+//       background: #ea352d;
+//       border: 1px solid #ea352d;
+//       color: #fff;
+//       cursor: pointer;
+//       text-align: center;  
+//       text-decoration: none;
+//     }
+//     .exhibitCancel{
+//       display: block;
+//       margin: 24px auto 0;
+//       width: 45%;
+//       line-height: 48px;
+//       font-size: 17px;
+//       transition: all ease-out .3s;
+//       background: #aaa;
+//       border: 1px solid #aaa;
+//       color: #fff;
+//       cursor: pointer;
+//       text-align: center;  
+//       text-decoration: none;
+//     }
+//   }
+//   &__footer{
+//     text-align: center;
+//     padding: 40px 0px 41px;
+//     &__lists{
+//       margin: -16px 0px 40px -16px;
+//       &__list{
+//         margin: 16px 0px 0px 16px;
+//         font-size: 12px;
+//         color: black;
+//       }
+//     }
+//     &__logo{
+//       width: 80px;
+//       height: 65px;
+//       margin: 40px auto 0;
+//       &__image{
+//         width: 185px;
+//         height: 49px;
+//       }
+//     }
+//     &__ending{
+//       font-size: 13px;
+//       text-align: center;
+//     }
+//   }
+// }
 
-.item-num-0{
-  width: 100%;
-}
-.item-num-1{
-  width: 491px;
-}
-.item-num-2{
-  width: 363px;
-}
-.item-num-3{
-  width: 234px;
-}
-.item-num-4{
-  width: 106px;
-}
-//下段のfile_field
-.item-num-5{
-  width: 100%;
-}
-.item-num-6{
-  width: 491px;
-}
-.item-num-7{
-  width: 363px;
-}
-.item-num-8{
-  width: 234px;
-}
-.item-num-9{
-  width: 106px;
-}
+// .item-num-0{
+//   width: 100%;
+// }
+// .item-num-1{
+//   width: 491px;
+// }
+// .item-num-2{
+//   width: 363px;
+// }
+// .item-num-3{
+//   width: 234px;
+// }
+// .item-num-4{
+//   width: 106px;
+// }
+// //下段のfile_field
+// .item-num-5{
+//   width: 100%;
+// }
+// .item-num-6{
+//   width: 491px;
+// }
+// .item-num-7{
+//   width: 363px;
+// }
+// .item-num-8{
+//   width: 234px;
+// }
+// .item-num-9{
+//   width: 106px;
+// }

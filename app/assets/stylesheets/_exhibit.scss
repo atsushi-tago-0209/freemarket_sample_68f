@@ -41,7 +41,7 @@ html{
           border-top: 1px solid #eee;
 
           &__upload{
-            width: 620px;
+            width: 692px;
             padding: 40px;
 
             &__head{
@@ -58,7 +58,7 @@ html{
               display: block;
               margin: 16px auto 0;
               display: flex;
-              flex-wrap: wrap;
+              // flex-wrap: wrap;
 
               .prev-content {
                 display: flex;
@@ -130,10 +130,14 @@ html{
               }
             
               .hidden-content {
+                display: none;
                 .hidden-field {
-                  // display: none;
+                  display: none;
                 }
                 .hidden-checkbox {
+                  display: none;
+                }
+                .js-file_group{
                   display: none;
                 }
               }

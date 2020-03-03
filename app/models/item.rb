@@ -1,7 +1,7 @@
 class Item < ApplicationRecord
   has_many :messages, dependent: :destroy
-  has_many :images, dependent: :destroy
-  accepts_nested_attributes_for :images, allow_destroy: true
+  has_many :images, dependent: :destroy,index_errors: true
+  accepts_nested_attributes_for :images
   belongs_to :user
   belongs_to :category
   belongs_to :size
@@ -13,7 +13,7 @@ class Item < ApplicationRecord
     belongs_to_active_hash :deriver_date
     belongs_to_active_hash :soldout_or_exhibiting
 
-  validates :name,:price,:description,:deriver_charge,:deriver_date,:category_id,:condition_id,:prefecture_id, presence: true
+  validates :name,:image_url,:price,:description,:deriver_charge,:deriver_date,:category_id,:condition_id,:prefecture_id, presence: true
 
   def previous
     user.items.order('created_at desc, id desc').where('created_at <= ? and id < ?', created_at, id).first
